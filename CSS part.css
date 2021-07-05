@@ -1,8 +1,8 @@
 body {
-    background-color: green;
+    background-color: rgb(255, 217, 2);
 }
 h2{
-    color: white;
+    color: black;
     text-align: center;
 }
 .input {
@@ -13,17 +13,20 @@ h2{
     border-color: black;
     padding-bottom: 5px;
 }
-.button {
-    border: 0px;
+.btn-secondary {
     margin: 5px;
     margin-top: 15mm;
-    padding: 3mm;
 }
-.button:hover {
-    background-color: grey;
+.btn-success {
+    margin: 5px;
+    margin-top: 15mm;
+}
+.btn-danger {
+    margin: 5px;
+    margin-top: 15mm;
 }
 .gameInfo {
-    color: white;
+    color: black;
     position:absolute;
     bottom:0;
     text-align: center;

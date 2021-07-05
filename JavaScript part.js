@@ -1,3 +1,4 @@
+var correctButton = Math.floor(Math.random() * 3) + 1;
 function addButtons() {
     var amountOfButtons = document.getElementById("inputNumber").value;
     var removeElement = document.getElementById("inputNumber");
@@ -19,11 +20,12 @@ function addButtons() {
 }
 
 function checkButton(buttonId) {
-    var correctButton = Math.floor(Math.random() * 3) + 1;
     var checkClickedButton = buttonId;
     if(correctButton == checkClickedButton) {
+        document.getElementById(buttonId).className = "btn btn-success";
         document.getElementById("message").innerHTML = "Correct ! :)";
     } else {
+        document.getElementById(buttonId).className = "btn btn-danger";
         document.getElementById("message").innerHTML = "Wrong ! :(";
     }
 }
