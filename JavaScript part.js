@@ -5,7 +5,7 @@ function addButtons() {
     removeElement.remove();
     removeElement = document.getElementById("startButton");
     removeElement.remove();
-    for(var i = 0; i < amountOfButtons; ++i){
+    for (var i = 0; i < amountOfButtons; ++i){
         var bttn = document.createElement('button');
         bttn.setAttribute("id", i + 1);
         bttn.setAttribute("class", "btn btn-secondary");
@@ -14,14 +14,14 @@ function addButtons() {
         var insertHere = document.getElementById("guessTheButton");
         insertHere.appendChild(bttn);
     }
-    if(amountOfButtons < 3) {
+    if (amountOfButtons < 3) {
         document.getElementById("guessTheButton").innerHTML = "Choose at least 3 buttons :)";
     }
 }
 
 function checkButton(buttonId) {
     var checkClickedButton = buttonId;
-    if(correctButton == checkClickedButton) {
+    if (correctButton == checkClickedButton) {
         document.getElementById(buttonId).className = "btn btn-success";
         document.getElementById("message").innerHTML = "Correct ! :)";
     } else {
