@@ -1,0 +1,31 @@
+body {
+    background-color: green;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+.input {
+    text-align: center;
+}
+#inputNumber {
+    border-radius: 15px;
+    border: 0px;
+    padding-bottom: 5px;
+}
+.button {
+    border: 0px;
+    margin: 5px;
+    margin-top: 15mm;
+    padding: 3mm;
+}
+.button:hover {
+    background-color: cyan;
+}
+.gameInfo {
+    color: white;
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    left: 400px;
+}
