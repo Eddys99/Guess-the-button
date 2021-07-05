@@ -7,30 +7,27 @@ function addButtons() {
     for(var i = 0; i < amountOfButtons; ++i){
         var bttn = document.createElement('button');
         bttn.setAttribute("id", i + 1);
-        bttn.setAttribute("class", "button");
-        bttn.onclick = checkButton;
+        bttn.setAttribute("class", "btn btn-secondary");
+        bttn.setAttribute("onclick", "checkButton(this.id)");
         bttn.textContent = i + 1;
         var insertHere = document.getElementById("guessTheButton");
         insertHere.appendChild(bttn);
     }
-    if(amountOfButtons <= 2) {
+    if(amountOfButtons < 3) {
         document.getElementById("guessTheButton").innerHTML = "Choose at least 3 buttons :)";
     }
-    return false;
 }
 
-function checkButton() {
+function checkButton(buttonId) {
     var correctButton = Math.floor(Math.random() * 3) + 1;
-    var checkClickedButton = 1;
+    var checkClickedButton = buttonId;
     if(correctButton == checkClickedButton) {
-        document.getElementById("guessTheButton").innerHTML = "Correct ! :)";
+        document.getElementById("message").innerHTML = "Correct ! :)";
     } else {
-        document.getElementById("guessTheButton").innerHTML = "Wrong ! :(";
+        document.getElementById("message").innerHTML = "Wrong ! :(";
     }
-    return false;
 }
 
 function restartEverything() {
     location.reload();
-    return false;
 }

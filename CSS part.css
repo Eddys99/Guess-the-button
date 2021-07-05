@@ -10,7 +10,7 @@ h2{
 }
 #inputNumber {
     border-radius: 15px;
-    border: 0px;
+    border-color: black;
     padding-bottom: 5px;
 }
 .button {
@@ -20,7 +20,7 @@ h2{
     padding: 3mm;
 }
 .button:hover {
-    background-color: cyan;
+    background-color: grey;
 }
 .gameInfo {
     color: white;
