@@ -1,4 +1,3 @@
-  
 var correctButton = 0;
 function addButtons() {
     var amountOfButtons = document.getElementById("inputNumber").value;
