@@ -1,4 +1,5 @@
-var correctButton = Math.floor(Math.random() * 3) + 1;
+  
+var correctButton = 0;
 function addButtons() {
     var amountOfButtons = document.getElementById("inputNumber").value;
     var removeElement = document.getElementById("inputNumber");
@@ -14,8 +15,9 @@ function addButtons() {
         var insertHere = document.getElementById("guessTheButton");
         insertHere.appendChild(bttn);
     }
-    if (amountOfButtons < 3) {
-        document.getElementById("guessTheButton").innerHTML = "Choose at least 3 buttons :)";
+    correctButton = Math.floor(Math.random() * amountOfButtons) + 1;
+    if (amountOfButtons < 2) {
+        document.getElementById("guessTheButton").innerHTML = "Choose at least 2 buttons :)";
     }
 }
 
